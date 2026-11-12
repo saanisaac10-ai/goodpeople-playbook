@@ -327,6 +327,14 @@ details.mini .cost{border-top:0;padding-top:0}
 }
 @media (max-width:620px){.pager{flex-direction:column}.pager a{flex-basis:auto}}
 @media (prefers-reduced-motion:reduce){.orbit path{animation:none}}
+
+/* perf + lead: four parts as a 2x2 box */
+#perf .acc-list,#lead .acc-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;border-top:0}
+#perf .acc,#lead .acc{border:0;background:var(--band);border-radius:20px;padding:12px 20px;align-self:start}
+#perf .acc[open],#lead .acc[open]{grid-column:1/-1}
+#perf .acc.wide{grid-column:1/-1}
+#perf .acc summary,#lead .acc summary{padding:12px 0}
+@media (max-width:860px){#perf .acc-list,#lead .acc-list{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -576,12 +584,12 @@ details.mini .cost{border-top:0;padding-top:0}
   </div>
 
   <div class="acc-list">
-    <details class="acc" open>
+    <details class="acc">
       <summary><span><b>1 · How goals are set</b><em>Fewer KPIs that add up, goals that can be measured, and a conversation that runs through the year.</em></span><i class="chev" aria-hidden="true"></i></summary>
       <div class="acc-body">
         <div class="grid g3">
           <div class="tile"><span class="k">Fewer KPIs that add up</span><p>Mature teams usually have one primary KPI that matters most, with the rest feeding into it. Abhishek and his directs set three to five company outcomes, and every team's KPIs add up to its leader's with a sensible buffer built in.</p></div>
-          <div class="tile"><span class="k">Goals that can be measured</span><p>HR reviews every goal and pushes back gently on the vague ones, because "employer branding" is a theme, whereas "lift eNPS from X to Y" is something a person can work towards.</p></div>
+          <div class="tile"><span class="k">Goals that can be measured</span><p>HR reviews every goal and pushes back gently on the vague ones, because "run better events" is a theme, whereas "keep the event tracker at least 98% complete, with no data errors at dispatch" is something a Program Manager can work towards.</p></div>
           <div class="tile"><span class="k">A conversation through the year</span><p>Monthly self check-ins, a quarterly leadership review and a documented half-year conversation mean the rating reflects twelve months of work, and nobody hears something new for the first time in their review.</p></div>
         </div>
       </div>
@@ -634,7 +642,7 @@ details.mini .cost{border-top:0;padding-top:0}
       </div>
     </details>
 
-    <details class="acc">
+    <details class="acc wide">
       <summary><span><b>Sample review page</b><em>How one cycle might look for a Program Manager in Experience Global.</em></span><i class="chev" aria-hidden="true"></i></summary>
       <div class="acc-body">
         <p class="small">An illustrative example for the Q1 2027 cycle, in which the person rates their own speed and quality and the manager rates both and sets the complexity.</p>
@@ -714,10 +722,10 @@ details.mini .cost{border-top:0;padding-top:0}
   <div class="head">
     <p class="eyebrow">07 · How I'll lead this</p>
     <h2>What this phase asks of its HR leader, and what I bring to it</h2>
-    <p class="lede">Having set out what I would build, this is what I believe the phase asks of the person leading it. It needs someone who sits with the CEO and functional heads while org design, headcount and role scope are being decided, and who can build the operating rhythm while the business keeps running at full speed. These are the four things I believe the role asks for, and you can open each one to see where I have done it before.</p>
+    <p class="lede">Having set out what I would build, this is what I believe the phase asks of the person leading it. It needs someone who will sit with the leadership, the functional heads and even individuals while org design, headcount and role scope are being decided, and who can build the operating rhythm while the business keeps running at full speed. These are the four things I believe the role asks for, and you can open each one to see where I have done it before.</p>
   </div>
   <div class="acc-list">
-    <details class="acc" open>
+    <details class="acc">
       <summary><span><b>Starting from the business problem</b><em>Every People decision should answer a question about revenue, capacity, margin or risk before it answers an HR one.</em></span><i class="chev" aria-hidden="true"></i></summary>
       <div class="acc-body ev"><span class="label">Where I've done it · Emeritus</span>I replaced a tenure-based sales incentive with one tied to contribution margin, which lifted productivity by <b>10–15%</b>, added roughly <b>$200–300K</b> in revenue a quarter and brought incentive costs down by about <b>$100K</b>, and I ran the revenue productivity studies that shaped headcount and hiring budgets.</div>
     </details>
@@ -751,7 +759,7 @@ details.mini .cost{border-top:0;padding-top:0}
 <section class="band"><div class="wrap">
   <div class="head">
     <p class="eyebrow">08 · The road to 2028</p>
-    <h2>Where this could take Goodera over the next two years</h2>
+    <h2>Where I envision this taking Goodera over the next two years</h2>
     <p class="lede">I would like Goodera to become a great place to work in a way our people would recognise, with higher talent density and a People system where performance is measured fairly, merit is visible and decisions are grounded in data.</p>
   </div>
   <div class="score">
@@ -805,6 +813,5 @@ details.mini .cost{border-top:0;padding-top:0}
   fromHash(false);
 })();
 </script>
-
 </body>
 </html>
