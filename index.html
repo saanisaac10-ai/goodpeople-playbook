@@ -377,6 +377,15 @@ details.mini .cost{border-top:0;padding-top:0}
 .key{display:inline-block;width:14px;height:10px;border-radius:3px;box-shadow:inset 0 0 0 1.5px var(--coral);margin-right:8px;vertical-align:-1px}
 @media (max-width:860px){.orgs,#levels .acc-list{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:480px){.oc-kids{grid-template-columns:minmax(0,1fr)}}
+
+.oc.hub{background:var(--ink)}
+.oc.hub h4{color:var(--bg)}
+.oc.hub p{color:#c7c7cc}
+.oc.hub .oc-sub span.shared{background:rgba(255,255,255,.12);color:#f5f5f7}
+.org.next{box-shadow:inset 0 0 0 1.5px var(--coral)}
+.org .small{font-size:13.5px}
+.refs{font-size:12.5px;color:var(--faint);line-height:1.55;max-width:760px;border-top:1px solid var(--line);padding-top:12px}
+.refs a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line)}
 </style>
 </head>
 <body>
@@ -739,36 +748,37 @@ details.mini .cost{border-top:0;padding-top:0}
   </div>
 
   <div class="head" style="gap:10px">
-    <h3>A sample org chart, today and where it could go</h3>
-    <p class="muted read">Illustrative and drawn from public information and our conversations, so it implies no change to any individual's role.</p>
+    <h3>Two shapes Goodera could grow into</h3>
+    <p class="muted read">Both are drawn from public information and our conversations, so neither implies a change to any individual's role.</p>
   </div>
   <div class="orgs">
     <div class="org">
-      <p class="label">Today, as I understand it</p>
+      <p class="label">Option A · Functions, tidied up</p>
       <div class="oc-top">CEO and COO</div>
       <div class="oc-kids">
+        <div class="oc"><h4>Sales and Marketing</h4><p>US, Europe and India</p></div>
         <div class="oc"><h4>Client Success</h4><p>India and the US</p></div>
-        <div class="oc"><h4>Delivery and Operations</h4><p>India, spans up to 1:20</p></div>
+        <div class="oc"><h4>Delivery</h4><p>India, with new team leads</p></div>
         <div class="oc"><h4>Host network</h4><p>India and Spain</p></div>
-        <div class="oc"><h4>Product and Engineering</h4><p>Including Automation</p></div>
-        <div class="oc"><h4>GTM</h4><p>US and EU sales, marketing</p></div>
-        <div class="oc"><h4>Category</h4><p>India</p></div>
-        <div class="oc wide"><h4>Finance, HR, warehouse and supply chain</h4><p>India</p></div>
+        <div class="oc"><h4>Product and Category</h4><p>Including Automation</p></div>
+        <div class="oc"><h4>Finance and People</h4><p>Shared services</p></div>
       </div>
+      <p class="small">The lightest change, though every handoff in the client journey still crosses from one leader to another.</p>
     </div>
     <div class="org next">
-      <p class="label">A possible shape for the next phase</p>
+      <p class="label" style="color:var(--accent)">Option C · Recommended · Markets and one delivery hub</p>
       <div class="oc-top">CEO and COO</div>
       <div class="oc-kids">
-        <div class="oc wide chg"><h4>Customer Experience and Delivery</h4><p>One leader for the client journey, with regional pods led by pod leads</p>
-          <div class="oc-sub"><span>US pod</span><span>Europe pod</span><span>India pod</span><span class="shared">Shared hosts and logistics</span></div></div>
-        <div class="oc chg"><h4>Product and Category</h4><p>One roadmap, including Automation</p></div>
-        <div class="oc chg"><h4>Global GTM</h4><p>One plan across regions</p></div>
-        <div class="oc wide"><h4>Finance and People</h4><p>Finance, HR and business operations</p></div>
+        <div class="oc chg"><h4>Client and Growth</h4><p>One leader for sales, marketing and client success, organised by market</p>
+          <div class="oc-sub"><span>US</span><span>Europe</span><span>India</span></div></div>
+        <div class="oc hub"><h4>Global Delivery Hub</h4><p>Program managers, hosts, logistics and automation in India, working in squads</p>
+          <div class="oc-sub"><span class="shared">US squad</span><span class="shared">Europe squad</span><span class="shared">India squad</span></div></div>
+        <div class="oc"><h4>Product and Category</h4><p>One roadmap</p></div>
+        <div class="oc"><h4>Finance and People</h4><p>Shared services</p></div>
       </div>
+      <p class="small">Each squad reports into Delivery with a dotted line to its market, so the market decides what the client receives and the hub decides how it is delivered, against one shared scorecard for every account.</p>
     </div>
   </div>
-  <p class="small read"><span class="key"></span>Boxes outlined in coral are the ones that would change.</p>
 
   <div class="acc-list">
     <details class="acc">
@@ -776,20 +786,19 @@ details.mini .cost{border-top:0;padding-top:0}
       <div class="acc-body">
         <ul class="clean">
           <li>Around 220 full-timers and 36 managers, with spans up to 1:20 in delivery.</li>
-          <li>Teams in Bengaluru, the US and Barcelona, with most delivery in India.</li>
+          <li>Teams in Bengaluru, the US and Barcelona, where selling and client success differ by market while delivery, hosts and logistics stay largely in India.</li>
           <li>Sizes and reporting lines are approximate and would be validated with each functional head.</li>
         </ul>
       </div>
     </details>
     <details class="acc">
-      <summary><span><b>Intent behind each change</b><em>What each move does for the business.</em></span><i class="chev" aria-hidden="true"></i></summary>
+      <summary><span><b>Intent behind Option C</b><em>What each move does for the business.</em></span><i class="chev" aria-hidden="true"></i></summary>
       <div class="acc-body">
         <ul class="clean">
-          <li><b style="color:var(--ink)">One owner for the client journey,</b> so the handoffs the 360 flags have one leader to fix them.</li>
-          <li><b style="color:var(--ink)">Pod leads from within,</b> bringing spans back towards 1:10 without a new layer.</li>
-          <li><b style="color:var(--ink)">Category with Product,</b> as category thinking shapes what we build.</li>
-          <li><b style="color:var(--ink)">Automation aimed at revenue per head,</b> so revenue grows faster than headcount.</li>
-          <li><b style="color:var(--ink)">One global GTM,</b> with one plan and one set of KPIs.</li>
+          <li><b style="color:var(--ink)">One leader for growth,</b> so that sales, marketing and client success in each market work to one plan and one set of KPIs.</li>
+          <li><b style="color:var(--ink)">One delivery hub in India,</b> which protects the delivery strength built since 2022 and lets every market draw on it.</li>
+          <li><b style="color:var(--ink)">Squads paired with markets,</b> so each client has a team that knows them, with squad leads bringing spans back towards 1:10.</li>
+          <li><b style="color:var(--ink)">Automation inside the hub,</b> aimed at revenue per head so that revenue can grow faster than headcount.</li>
         </ul>
       </div>
     </details>
@@ -824,6 +833,7 @@ details.mini .cost{border-top:0;padding-top:0}
     </details>
   </div>
   <p class="cobuilt"><b>Built with</b> the functional heads and Finance, with every role mapped to a level openly before the first performance cycle.</p>
+  <p class="refs">References I drew on: the global delivery model used by India-based services firms (<a href="https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/rethinking-the-model-for-offshoring-services" target="_blank" rel="noopener">McKinsey</a>, <a href="https://www.cgi.com/en/it-outsourcing-services/global-delivery-model" target="_blank" rel="noopener">CGI</a>), <a href="https://ethicalmarketingnews.com/benevity-announces-executive-leadership-appointments-to-drive-growth-and-scale-social-impact" target="_blank" rel="noopener">Benevity</a> and <a href="https://ir.freshworks.com/news/news-details/2026/Freshworks-Unifies-Global-Sales-Organization-to-Accelerate-Growth/default.aspx" target="_blank" rel="noopener">Freshworks</a> bringing sales and client teams under one leader in 2026, and <a href="https://teambuilding.com/about" target="_blank" rel="noopener">Teambuilding.com</a> keeping client relationships separate from host-led delivery.</p>
   <div class="thread">
     <p class="t">Keeping the speed, and making it last</p>
     <p>Clear owners and coaching managers mean faster decisions, and written levels mean a person's growth no longer depends on which manager they happen to have.</p>
