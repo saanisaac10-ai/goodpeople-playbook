@@ -358,7 +358,7 @@ details.mini .cost{border-top:0;padding-top:0}
 /* levels: 2x2 parts + sample org chart */
 #levels .acc-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;border-top:0}
 #levels .acc{border:0;background:var(--card);border-radius:20px;padding:12px 20px;align-self:start}
-#levels .acc[open]{grid-column:1/-1}
+#levels .acc[open],#levels .acc:last-child{grid-column:1/-1}
 #levels .acc summary{padding:12px 0}
 #levels .acc .tile{background:var(--band)}
 .orgs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
@@ -423,7 +423,7 @@ details.mini .cost{border-top:0;padding-top:0}
   <div class="grid g4 glance">
     <div class="tile"><span class="k">Where we are</span><p>A people-heavy organisation that has run on the strength of its people, and is now ready to move steadily towards systems without losing what makes them special, while continuing to empower people.</p></div>
     <div class="tile"><span class="k">What's missing</span><p>Objective measurement and shared accountability, which sit underneath the three gaps I see around resources, trust and merit.</p></div>
-    <div class="tile"><span class="k">What I'd build first</span><p>A cross-team 360, a performance system people can trust, clear levels with a stronger manager bar, and talent density that we plan for deliberately.</p></div>
+    <div class="tile"><span class="k">What I'd build first</span><p>A cross-team 360, a performance system people can trust, clear levels with an org shaped for the next phase, and talent density that we plan for deliberately.</p></div>
     <div class="tile"><span class="k">How it gets built</span><p>Together with Goodera's leaders and Gooders, starting with thirty days of listening, and with nothing launched until the people it affects are on board.</p></div>
   </div>
 </div></header>
@@ -515,7 +515,7 @@ details.mini .cost{border-top:0;padding-top:0}
         <li>Run the Diagnostic 360 to see where teams are losing time with each other</li>
         <li>An H2 leadership calibration with Dhruv that sets three to five outcomes per function, rolls them up to the org and puts the half's non-negotiables in writing</li>
         <li>Map spans and agree a baseline for each function</li>
-        <li>Agree one set of levels and a manager bar with the functional heads</li>
+        <li>Agree one set of levels with the functional heads</li>
         <li>Design the first performance cycle with each functional head</li>
         <li>A regular pulse and a quarterly survey, with the loop closed in the open</li>
       </ul>
@@ -736,14 +736,13 @@ details.mini .cost{border-top:0;padding-top:0}
 <section class="band alt"><div class="wrap">
   <div class="head">
     <p class="eyebrow">06 · The third system · Org Chart 2.0</p>
-    <h2>Clear levels, a stronger manager bar and an org shaped for the next phase</h2>
+    <h2>Clear levels and an org shaped for the next phase</h2>
   </div>
   <div class="why-block">
     <p class="big">As Goodera becomes product-led, the shape of the org and the meaning of a title matter as much as the people in them. <span>Today titles mean different things across teams, promotions tend to follow tenure, and many managers were promoted for their craft rather than for leading people.</span></p>
     <div class="steps">
       <div class="s"><div><h4>Sketch the shape of the org</h4><p>One accountable leader for every handoff in the client journey.</p></div></div>
       <div class="s"><div><h4>Agree one set of levels</h4><p>The same expectations at each level in Bengaluru, the US and Barcelona.</p></div></div>
-      <div class="s"><div><h4>Write down the manager bar</h4><p>What we expect from everyone who leads people.</p></div></div>
     </div>
   </div>
 
@@ -765,11 +764,11 @@ details.mini .cost{border-top:0;padding-top:0}
       </div>
       <p class="small">The lightest change, though every handoff in the client journey still crosses from one leader to another.</p>
     </div>
-    <div class="org next">
-      <p class="label" style="color:var(--accent)">Option C · Recommended · Markets and one delivery hub</p>
+    <div class="org">
+      <p class="label">Option B · Markets and one delivery hub</p>
       <div class="oc-top">CEO and COO</div>
       <div class="oc-kids">
-        <div class="oc chg"><h4>Client and Growth</h4><p>One leader for sales, marketing and client success, organised by market</p>
+        <div class="oc"><h4>Client and Growth</h4><p>One leader for sales, marketing and client success, organised by market</p>
           <div class="oc-sub"><span>US</span><span>Europe</span><span>India</span></div></div>
         <div class="oc hub"><h4>Global Delivery Hub</h4><p>Program managers, hosts, logistics and automation in India, working in squads</p>
           <div class="oc-sub"><span class="shared">US squad</span><span class="shared">Europe squad</span><span class="shared">India squad</span></div></div>
@@ -792,7 +791,7 @@ details.mini .cost{border-top:0;padding-top:0}
       </div>
     </details>
     <details class="acc">
-      <summary><span><b>Intent behind Option C</b><em>What each move does for the business.</em></span><i class="chev" aria-hidden="true"></i></summary>
+      <summary><span><b>Intent behind Option B</b><em>What each move does for the business.</em></span><i class="chev" aria-hidden="true"></i></summary>
       <div class="acc-body">
         <ul class="clean">
           <li><b style="color:var(--ink)">One leader for growth,</b> so that sales, marketing and client success in each market work to one plan and one set of KPIs.</li>
@@ -819,25 +818,8 @@ details.mini .cost{border-top:0;padding-top:0}
         <p>Levels anchor the talent bar for ratings, pay bands and promotions, which are decided on the next level's expectations rather than tenure.</p>
       </div>
     </details>
-    <details class="acc">
-      <summary><span><b>The manager bar</b><em>Four behaviours expected of everyone who leads people.</em></span><i class="chev" aria-hidden="true"></i></summary>
-      <div class="acc-body">
-        <div class="grid g2">
-          <div class="tile"><span class="k">Holds the bar on performance</span><p>Sets clear goals and has the conversation when it is needed.</p></div>
-          <div class="tile"><span class="k">Transparent about non-performance</span><p>Names it early and fairly, with real support.</p></div>
-          <div class="tile"><span class="k">Hands-on where it matters</span><p>Close enough to the work to coach it well.</p></div>
-          <div class="tile"><span class="k">Open communication</span><p>Shares the why, and brings the team's view back up.</p></div>
-        </div>
-        <p>Assessed in the 360 and the review, and taught through Next-in-Line.</p>
-      </div>
-    </details>
   </div>
-  <p class="cobuilt"><b>Built with</b> the functional heads and Finance, with every role mapped to a level openly before the first performance cycle.</p>
   <p class="refs">References I drew on: the global delivery model used by India-based services firms (<a href="https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/rethinking-the-model-for-offshoring-services" target="_blank" rel="noopener">McKinsey</a>, <a href="https://www.cgi.com/en/it-outsourcing-services/global-delivery-model" target="_blank" rel="noopener">CGI</a>), <a href="https://ethicalmarketingnews.com/benevity-announces-executive-leadership-appointments-to-drive-growth-and-scale-social-impact" target="_blank" rel="noopener">Benevity</a> and <a href="https://ir.freshworks.com/news/news-details/2026/Freshworks-Unifies-Global-Sales-Organization-to-Accelerate-Growth/default.aspx" target="_blank" rel="noopener">Freshworks</a> bringing sales and client teams under one leader in 2026, and <a href="https://teambuilding.com/about" target="_blank" rel="noopener">Teambuilding.com</a> keeping client relationships separate from host-led delivery.</p>
-  <div class="thread">
-    <p class="t">Keeping the speed, and making it last</p>
-    <p>Clear owners and coaching managers mean faster decisions, and written levels mean a person's growth no longer depends on which manager they happen to have.</p>
-  </div>
 </div></section>
 </div>
 
@@ -867,7 +849,7 @@ details.mini .cost{border-top:0;padding-top:0}
     </div>
   </div>
   <div class="grid g2">
-    <div class="tile"><span class="k">Manager and leadership capability</span><p>People tend to stay or leave because of their manager, so this means a Next-in-Line programme, first-time managers trained against the manager bar, succession mapped for every critical role, and co-dependent functions brought under one leader where that helps.</p></div>
+    <div class="tile"><span class="k">Manager and leadership capability</span><p>People tend to stay or leave because of their manager, so this means a Next-in-Line programme, first-time managers trained on feedback and the bar, succession mapped for every critical role, and co-dependent functions brought under one leader where that helps.</p></div>
     <div class="tile"><span class="k">Workforce planning</span><p>Every hiring request goes through a build, grow or buy conversation, where we first ask whether someone here can be developed or moved into the role and only then look outside, and where AI can do or improve the work, we consider that first.</p></div>
     <div class="tile"><span class="k">The bar, applied honestly</span><p>A fair improvement plan comes before any exit, top performers are given richer roles and responsibilities, and influential non-performers are handled with the same transparency as everyone else.</p></div>
     <div class="tile"><span class="k">Hiring as a judgement call</span><p>Interviews use the same level expectations, deliverables and culture scorecard that people are later reviewed on, with AI taking care of screening hygiene so that our interviewers can spend their time on judgement.</p></div>
