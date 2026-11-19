@@ -386,6 +386,16 @@ details.mini .cost{border-top:0;padding-top:0}
 .org .small{font-size:13.5px}
 .refs{font-size:12.5px;color:var(--faint);line-height:1.55;max-width:760px;border-top:1px solid var(--line);padding-top:12px}
 .refs a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line)}
+/* 90-day roadmap */
+.road90{list-style:none;margin:0;padding:0;position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.road90::before{content:"";position:absolute;left:16px;right:16px;top:16px;height:2px;background:linear-gradient(90deg,var(--coral),var(--ink))}
+.road90 li{position:relative;display:flex;flex-direction:column;gap:6px;min-width:0}
+.road90 .dot{width:34px;height:34px;border-radius:50%;background:var(--bg);box-shadow:inset 0 0 0 2px var(--coral);display:grid;place-items:center;font-size:13px;font-weight:700;color:var(--accent);position:relative;z-index:1;margin-bottom:8px}
+.road90 li:last-child .dot{background:var(--ink);color:var(--bg);box-shadow:none}
+.road90 .when{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+.road90 h4{font-size:16px;line-height:1.3}
+.road90 p{font-size:14px;color:var(--muted);line-height:1.45}
+@media (max-width:760px){.road90{grid-template-columns:minmax(0,1fr);gap:20px}.road90::before{left:16px;right:auto;top:16px;bottom:16px;width:2px;height:auto;background:linear-gradient(180deg,var(--coral),var(--ink))}.road90 li{padding-left:50px}.road90 .dot{position:absolute;left:0;top:0;margin:0}}
 </style>
 </head>
 <body>
@@ -534,15 +544,15 @@ details.mini .cost{border-top:0;padding-top:0}
   </div>
   <div class="head" style="gap:10px;margin-top:16px">
     <h3 style="font-size:clamp(24px,3vw,32px);letter-spacing:-.025em">What the first ninety days should show</h3>
-    <p class="muted read">By the end of the first quarter, I would want us to be able to look back and see these five things in place, each one shared openly with Sriram and the leadership team.</p>
+    <p class="muted read">Five things in place by day ninety, each shared openly with Sriram and the leadership team.</p>
   </div>
-  <div class="steps read">
-    <div class="s"><div><h4>A clear read of every team</h4><p>Themes from across teams on what is working and what needs to be fixed, along with how HR will help carry each change through, so that people hear the reason from us before they feel the change.</p></div></div>
-    <div class="s"><div><h4>A first view of talent density</h4><p>An approximate talent density percentage for each team based on performance, with managers aligned on how they review their people and one clear SOP that every manager follows in the same way.</p></div></div>
-    <div class="s"><div><h4>Where we could lose good people</h4><p>A view of where we are at risk of losing strong talent and where a team shuffle would serve both the people and the work better, so that these conversations happen early and with care.</p></div></div>
-    <div class="s"><div><h4>A townhall rhythm that rewards the team</h4><p>A quarterly townhall plan with a KPI-based rewards and recognition programme that puts teamwork ahead of individual achievement, in keeping with WE before ME.</p></div></div>
-    <div class="s"><div><h4>An honest look at how teams are set up</h4><p>A start on reviewing how teams are structured, with honest candour about what is and isn't working, and proposals for team changes that allow better service models for our clients.</p></div></div>
-  </div>
+  <ol class="road90">
+    <li><span class="dot">1</span><span class="when">Month 1</span><h4>A read of every team</h4><p>What works, what to fix, and how HR carries the change</p></li>
+    <li><span class="dot">2</span><span class="when">Month 2</span><h4>Talent density by team</h4><p>A first % for each team, and one review SOP for every manager</p></li>
+    <li><span class="dot">3</span><span class="when">Month 2</span><h4>Where we could lose people</h4><p>Strong talent at risk, and where teams need a reshuffle</p></li>
+    <li><span class="dot">4</span><span class="when">Month 3</span><h4>Townhall and R&amp;R</h4><p>A quarterly rhythm, KPI-led, with the team ahead of the individual</p></li>
+    <li><span class="dot">90</span><span class="when">Day 90</span><h4>Team design</h4><p>Candid proposals for better service models</p></li>
+  </ol>
   <div class="head" style="gap:10px;margin-top:8px">
     <p class="label">Alongside all three, with Marketing and TA</p>
     <p class="muted read">I think of culture as the organisation's operating system, and it is experienced far more in small everyday moments than in values written on a wall, which is why this work runs from the very start rather than waiting until the systems are in place.</p>
